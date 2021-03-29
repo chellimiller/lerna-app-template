@@ -50,7 +50,9 @@ function copyFolder(from, to) {
 function combineBuilds() {
   fs.mkdirSync(ROOT_BUILD_DIRECTORY);
 
-  copyFolder(ROOT_PUBLIC_DIRECTORY, ROOT_BUILD_DIRECTORY);
+  if (fs.existsSync(ROOT_PUBLIC_DIRECTORY)) {
+    copyFolder(ROOT_PUBLIC_DIRECTORY, ROOT_BUILD_DIRECTORY);
+  }
 
   fs.readdirSync(PACKAGES_DIRECTORY).forEach(package => {
     const packagePath = path.join(PACKAGES_DIRECTORY, package);

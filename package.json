@@ -5,10 +5,13 @@
     "setup": "npm i && npm run bootstrap",
     "bootstrap": "lerna bootstrap",
     "build": "npm run clean && node scripts/build",
-    "clean": "node scripts/clean"
+    "clean": "node scripts/clean",
+    "start": "npm run build && node build/server"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "copy": "^0.3.2",
     "lerna": "^3.22.1"
   }
 }

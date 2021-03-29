@@ -1,6 +1,6 @@
 {
-  "name": "@epic-story/worker",
-  "version": "1.0.0",
+  "name": "worker",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {},
   "scripts": {
