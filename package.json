@@ -6,7 +6,8 @@
     "bootstrap": "lerna bootstrap",
     "build": "npm run clean && node scripts/build",
     "clean": "node scripts/clean",
-    "start": "npm run build && node build/server"
+    "start": "npm run build && node build/server",
+    "test": "lerna run test"
   },
   "dependencies": {
     "express": "^4.17.1"
