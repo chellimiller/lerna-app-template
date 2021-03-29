@@ -1,0 +1,33 @@
+{
+  "name": "@epic-story/worker",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint src"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "@types/jest": "^26.0.20",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.20.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
